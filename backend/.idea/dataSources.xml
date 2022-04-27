@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="task_lab@localhost" uuid="dcb65464-0db2-48bb-8fda-610d4dcc7235">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/task_lab</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="tasklab@localhost" uuid="8cc29a92-9d92-4e30-ad39-8983a0bf413a">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/tasklab</jdbc-url>
+    </data-source>
+  </component>
+</project>

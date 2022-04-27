@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5afc52e6-4734-49bf-8d6c-5ca16ff6ec15" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="tasklab@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="tasklab@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="tasklab@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="tasklab: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="tasklab@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="tasklab: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="tasklab@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="tasklab: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="tasklab@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="tasklab: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="220JeJrE71oh7ifcoQk8c61oO7w" />
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.tusur.lab.config" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.tusur.lab.controller" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.TaskApp">
+    <configuration name="ControllerTest.getOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.tusur.rest-api-labs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tusur.lab.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tusur.lab.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.tusur.lab.controller.ControllerTest" />
+      <option name="METHOD_NAME" value="getOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WSTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.tusur.rest-api-labs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tusur.lab.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tusur.lab.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.tusur.lab.controller.WSTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebSocketTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.tusur.rest-api-labs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tusur.lab.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tusur.lab.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.tusur.lab.controller.WebSocketTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebSocketTest.verifyGreetingIsReceived" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.tusur.rest-api-labs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tusur.lab.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tusur.lab.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.tusur.lab.controller.WebSocketTest" />
+      <option name="METHOD_NAME" value="verifyGreetingIsReceived" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="com.tusur.rest-api-labs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tusur.lab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tusur.lab.TaskApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.TaskApp" />
+        <item itemvalue="JUnit.WebSocketTest" />
+        <item itemvalue="JUnit.WSTest.test" />
+        <item itemvalue="JUnit.ControllerTest.getOne" />
+        <item itemvalue="JUnit.WebSocketTest.verifyGreetingIsReceived" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@41ef12ae" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@41ef12ae" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@3f47f7be" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5afc52e6-4734-49bf-8d6c-5ca16ff6ec15" name="Default Changelist" comment="" />
+      <created>1638968664838</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638968664838</updated>
+      <workItem from="1638968669904" duration="3525000" />
+      <workItem from="1638972384838" duration="395000" />
+      <workItem from="1638972871395" duration="228000" />
+      <workItem from="1638973960344" duration="2236000" />
+      <workItem from="1639067647382" duration="1528000" />
+      <workItem from="1639325322032" duration="2246000" />
+      <workItem from="1639802762583" duration="6280000" />
+      <workItem from="1639813472151" duration="1869000" />
+      <workItem from="1639829150986" duration="5172000" />
+      <workItem from="1640186396580" duration="4076000" />
+      <workItem from="1640270773090" duration="3007000" />
+      <workItem from="1640353408204" duration="140000" />
+      <workItem from="1640353585914" duration="1048000" />
+      <workItem from="1640367536795" duration="1711000" />
+      <workItem from="1640398520124" duration="816000" />
+      <workItem from="1640447004900" duration="2110000" />
+      <workItem from="1640526312488" duration="30000" />
+      <workItem from="1640527008830" duration="60000" />
+      <workItem from="1640527639700" duration="22000" />
+      <workItem from="1640527702462" duration="2122000" />
+      <workItem from="1640614774339" duration="5585000" />
+      <workItem from="1640794195534" duration="513000" />
+      <workItem from="1641145358172" duration="781000" />
+      <workItem from="1641146736805" duration="481000" />
+      <workItem from="1641577042470" duration="240000" />
+      <workItem from="1641640911132" duration="1288000" />
+      <workItem from="1641701964105" duration="2571000" />
+      <workItem from="1641706928026" duration="4388000" />
+      <workItem from="1641990702825" duration="4440000" />
+      <workItem from="1642165221476" duration="3727000" />
+      <workItem from="1642170709291" duration="711000" />
+      <workItem from="1642171534910" duration="2532000" />
+      <workItem from="1642827508654" duration="6112000" />
+      <workItem from="1642867205912" duration="2266000" />
+      <workItem from="1642938003241" duration="2210000" />
+      <workItem from="1643121868997" duration="2588000" />
+      <workItem from="1643293597602" duration="2306000" />
+      <workItem from="1643385577187" duration="1795000" />
+      <workItem from="1643430179378" duration="5457000" />
+      <workItem from="1643444006242" duration="505000" />
+      <workItem from="1643444672741" duration="5153000" />
+      <workItem from="1643517459274" duration="10499000" />
+      <workItem from="1644382829395" duration="4328000" />
+      <workItem from="1644389965007" duration="121000" />
+      <workItem from="1644390568420" duration="1463000" />
+      <workItem from="1644641833716" duration="801000" />
+      <workItem from="1644729981734" duration="1185000" />
+      <workItem from="1644936084939" duration="593000" />
+      <workItem from="1645111628022" duration="759000" />
+      <workItem from="1650692038531" duration="22419000" />
+      <workItem from="1650770361245" duration="8983000" />
+      <workItem from="1650784550600" duration="460000" />
+      <workItem from="1650796055157" duration="12610000" />
+      <workItem from="1650979101124" duration="5842000" />
+      <workItem from="1651068526974" duration="291000" />
+      <workItem from="1651069021191" duration="3314000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tusur/lab/controller/AuthController.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/tusur/lab/controller/WebSocketTest.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/tusur/lab/controller/WebSocketTest.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/tusur/lab/controller/WebSocketTest.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/tusur/lab/controller/WebSocketTest.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/tusur/lab/controller/WebSocketTest.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tusur/lab/service/TaskService.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="session" />
+        <watch expression="((DefaultSubscription)s).this$0" custom="org.springframework.messaging.simp.stomp.DefaultStompSession.DefaultSubscription" />
+      </configuration>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="((StrictFirewalledRequest)((HeaderWriterRequest)request).request).this$0" custom="org.springframework.security.web.firewall.StrictHttpFirewall.StrictFirewalledRequest,org.springframework.security.web.header.HeaderWriterFilter.HeaderWriterRequest" />
+        <watch expression="((StrictFirewalledRequest)((HeaderWriterRequest)request).request).this$0" language="JAVA" custom="org.springframework.security.web.firewall.StrictHttpFirewall.StrictFirewalledRequest,org.springframework.security.web.header.HeaderWriterFilter.HeaderWriterRequest" />
+        <watch expression="((StrictFirewalledRequest)((HeaderWriterRequest)((Servlet3SecurityContextHolderAwareRequestWrapper)servletRequest).request).request).request" custom="org.springframework.security.web.firewall.StrictHttpFirewall.StrictFirewalledRequest,org.springframework.security.web.header.HeaderWriterFilter.HeaderWriterRequest,org.springframework.security.web.servletapi.HttpServlet3RequestFactory.Servlet3SecurityContextHolderAwareRequestWrapper" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/rest_api_labs$ControllerTest_getOne.ic" NAME="ControllerTest.getOne Coverage Results" MODIFIED="1639811361138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.tusur.lab.controller.*</FILTER>
+    </SUITE>
+  </component>
+</project>
