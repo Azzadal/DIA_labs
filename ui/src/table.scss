@@ -1,0 +1,9 @@
+$table-header-color: #e2e2e2;
+
+.ant-table-thead {
+  > tr {
+    > th {
+      background-color: $table-header-color !important;
+    }
+  }
+}
