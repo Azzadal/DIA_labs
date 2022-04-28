@@ -1,0 +1,29 @@
+{
+  "name": "websocket-test",
+  "version": "1.0.0",
+  "description": "Приложение для тестирование web-socket",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index",
+    "test": "jest"
+  },
+  "keywords": [
+    "node",
+    "web-socket"
+  ],
+  "author": "azzadal",
+  "license": "ISC",
+  "dependencies": {
+    "@stomp/stompjs": "^5.0.0-beta.3",
+    "iconv-lite": "^0.6.3",
+    "mocha": "^9.2.2",
+    "sockjs-client": "^1.3.0",
+    "stompjs": "^2.3.3",
+    "supertest": "^6.2.2",
+    "websocket": "^1.0.34",
+    "ws": "^8.5.0"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
