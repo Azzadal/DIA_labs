@@ -1,22 +1,22 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import 'antd/dist/antd.css';
-import { Tag, Card, Switch, Button, Modal } from 'antd';
+import { Card, Switch, Button, Modal } from 'antd';
 import Table from './Table';
 import { CloseOutlined, CheckOutlined } from '@ant-design/icons';
 import { CreateTask } from './CreateTask';
 import { ColumnsType } from 'antd/lib/table/Table';
 import EditTask from './EditTask';
 import { createTask, deleteTask, editTask, getTasks } from './queries/hooks';
-import { ITaskInfo } from './types/types';
+import { IConnectProps, ITaskInfo } from './types/types';
 import {
-  mapTableRecordToTaskMutate,
   mapTaskInfoToTableRecord,
   mapTaskInfoToTaskMutate,
   mapTaskMutateToTaskInfo,
 } from './utils/mapper';
-import { authservise } from './auth/authservice';
 import { LoginPage } from './auth/AuthPage';
 import axios from 'axios';
+import { webSocketClient } from './web-socket';
+import { Client } from '@stomp/stompjs';
 
 interface ITableRecord extends ITaskInfo {
   key: string;
@@ -26,28 +26,91 @@ export const Main: React.FC = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const [modalEditVisible, setModalEditVisible] = useState(false);
   const [editProp, setEditProp] = useState<ITableRecord>();
-  const [data, setData] = useState<ITableRecord[]>();
+  const [objData, setData] = useState<ITableRecord[]>([]);
   const [token, setToken] = useState<string>('');
+  const [client, setClient] = useState<Client>(new Client());
+
+  const ws = webSocketClient('ws://localhost:8080/tasker');
 
   useEffect(() => {
-    console.log('token', token);
-    queryTask();
-  }, [token]);
+    setClient(ws.client);
+    ws.connect();
+  }, []);
 
-  const queryTask = async () => {
-    const data = await getTasks();
-    setData(mapTaskInfoToTableRecord(mapTaskMutateToTaskInfo(data)));
+  client.onConnect = (frame) => {
+    subscriber.forEach((prop) => {
+      client.subscribe(prop.destination, prop.cb);
+    });
+
+    client.publish({ destination: '/app/getTasks' });
+  };
+
+  const subscriber: IConnectProps[] = [
+    /**
+     * Подписка на получение всех задач из базы
+     */
+    {
+      destination: '/topic/tasks',
+      cb: (response) => {
+        console.log('get tasks...', JSON.parse(response.body));
+        setData(
+          mapTaskInfoToTableRecord(mapTaskMutateToTaskInfo(JSON.parse(response.body)))
+        );
+      },
+    },
+    /**
+     * Подписка на получение одной задачи
+     */
+    {
+      destination: '/topic/task',
+      cb: (response) => {
+        console.log('get task...', JSON.parse(response.body));
+      },
+    },
+    /**
+     * Подписка на получение информации о создании задачи
+     */
+    {
+      destination: '/topic/create',
+      cb: (response) => {
+        queryTask();
+        console.log('create task...', response.body);
+      },
+    },
+    /**
+     * Подписка на получение оповещения об обновлении задачи
+     */
+    {
+      destination: '/topic/editing',
+      cb: (response) => {
+        queryTask();
+        console.log('editing...', response.body);
+      },
+    },
+    /**
+     * Подписка на получение оповещения об удалении задачи
+     */
+    {
+      destination: '/topic/deleting',
+      cb: (response) => {
+        queryTask();
+        console.log('deleting...', response.body);
+      },
+    },
+  ];
+
+  const queryTask = () => {
+    getTasks(client);
   };
 
   const onChange = (checked: boolean, event: Event) => {
     console.log('Нажат switch', checked, event);
   };
 
-  const handleCreateTask = async (taskInfo: ITaskInfo) => {
+  const handleCreateTask = (taskInfo: ITaskInfo) => {
     const taskMutate = mapTaskInfoToTaskMutate(taskInfo);
-    await createTask(taskMutate);
+    createTask(client, taskMutate);
     setModalVisible(false);
-    queryTask();
   };
 
   const columns: ColumnsType<ITableRecord> = [
@@ -101,10 +164,9 @@ export const Main: React.FC = () => {
   ];
 
   // обработчик удаления записи
-  const deleteTaskHandle = async (taskName: string) => {
-    setData(data?.filter((item) => item.taskName !== taskName));
-    await deleteTask(taskName);
-    queryTask();
+  const deleteTaskHandle = (taskName: string) => {
+    setData(objData?.filter((item) => item.taskName !== taskName));
+    deleteTask(client, taskName);
   };
 
   // обработчик редактирования записи
@@ -114,15 +176,15 @@ export const Main: React.FC = () => {
   };
 
   const editTaskHandle = async (record: ITableRecord) => {
-    await editTask(
-      record.taskName,
-      mapTableRecordToTaskMutate({
-        taskName: record.taskName,
-        taskDescription: record.taskDescription,
+    editTask(client, {
+      nameAsId: record.taskName,
+      task: {
+        name: record.taskName,
+        description: record.taskDescription,
         createTask: record.createTask,
-        status: record.status,
-      })
-    );
+        done: record.status,
+      },
+    });
     setModalEditVisible(false);
   };
 
@@ -142,7 +204,7 @@ export const Main: React.FC = () => {
       {token !== '' ? (
         <Card style={{ width: '80%', margin: '0 10%' }}>
           <Table<ITableRecord>
-            dataSource={data}
+            dataSource={objData}
             columns={columns}
             pagination={false}
             onRow={(record, rI) => ({

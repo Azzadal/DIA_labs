@@ -1,3 +1,5 @@
+type response = { body: any };
+
 export interface ITaskInfo {
   taskName: string;
   taskDescription: string;
@@ -6,6 +8,7 @@ export interface ITaskInfo {
 }
 
 export interface ITaskMutate {
+  id?: number;
   name: string;
   description: string;
   done: boolean;
@@ -15,4 +18,9 @@ export interface ITaskMutate {
 export interface IAuthInfo {
   login: string;
   password: string;
+}
+
+export interface IConnectProps {
+  destination: string;
+  cb: (response: response) => void;
 }

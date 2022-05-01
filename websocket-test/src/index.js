@@ -2,7 +2,7 @@ const SockJS = require('sockjs-client');
 const { Stomp }  = require('@stomp/stompjs');
 
 let stompClient = null;
-var socket = new SockJS('http://localhost:8080/tasker');
+const socket = new SockJS('http://localhost:8080/tasker');
 const connect = () => {
     stompClient = Stomp.over(socket)
     stompClient.connect({}, frame => {

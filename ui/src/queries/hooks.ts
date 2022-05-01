@@ -1,21 +1,21 @@
-import axios from "axios";
-import { ITaskMutate } from "../types/types";
+import { Client } from '@stomp/stompjs';
+import { ITaskMutate } from '../types/types';
 
+export const getTasks = (stompClient: Client) => {
+  stompClient.publish({ destination: '/app/getTasks', body: '' });
+};
 
-export const getTasks = async (): Promise<ITaskMutate[]> => {
-    const { data } = await axios.get('http://localhost:8080/tasks');
-    return data;
-}
+export const createTask = (stompClient: Client, task: ITaskMutate) => {
+  stompClient.publish({ destination: '/app/addTask', body: JSON.stringify(task) });
+};
 
-export const createTask = async (task: ITaskMutate) => {
-    await axios.post('http://localhost:8080/tasks/addTask', task);
-}
+export const editTask = (stompClient: Client, taskRequest: any) => {
+  stompClient.publish({ destination: '/app/putTask', body: JSON.stringify(taskRequest) });
+};
 
-export const deleteTask = async (taskName: string) => {
-    await axios.delete(`http://localhost:8080/tasks/${taskName}`);
-    console.log(`task deleting... ${taskName}`)
-}
-
-export const editTask = async (taskName: string, task: ITaskMutate) => {
-    await axios.put(`http://localhost:8080/tasks/edit_task/${taskName}`, task);
-}
+export const deleteTask = (stompClient: Client, taskName: string) => {
+  stompClient.publish({
+    destination: `/app/deleteTask/${taskName}`,
+    body: taskName,
+  });
+};

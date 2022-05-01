@@ -40,9 +40,9 @@ export const LoginPage: React.FC<ILoginProps> = ({ onSubmit }) => {
       <Button onClick={authHandle}>Вход</Button>
       <Button onClick={registerHandle}>Регистрация</Button>
       <Modal visible={showModal} footer={null}>
-        {choice == 'auth' ? (
+        {choice === 'auth' ? (
           <AuthPage onSubmit={handleSubmit} onCancel={() => setShowModal(false)} />
-        ) : choice == 'reg' ? (
+        ) : choice === 'reg' ? (
           <RegisterPage onSubmit={handleSubmit} onCancel={() => setShowModal(false)} />
         ) : (
           <strong>1</strong>
