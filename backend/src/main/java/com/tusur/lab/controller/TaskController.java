@@ -35,10 +35,11 @@ public class TaskController {
     }
 
     @MessageMapping("/addTask")
-//    @SendTo("/topic/messages")
-    public void addTask(@RequestBody Task taskReq) {
+    @SendTo("/topic/create")
+    public String addTask(@RequestBody Task taskReq) {
         logger.info("Кто-то добавил новую задачу с именем " + taskReq.getName());
         taskService.addTask(taskReq);
+        return "Создана задача с именем " + taskReq.getName();
     }
 
     @MessageMapping("/putTask")
@@ -48,7 +49,7 @@ public class TaskController {
         return "Обновлена задача с именем " + request.getNameAsId();
     }
 
-    @MessageMapping("/deleteTask")
+    @MessageMapping("/deleteTask/{name}")
     @SendTo("/topic/deleting")
     public String delete(@PathVariable String name) {
         taskService.deleteTask(name);
